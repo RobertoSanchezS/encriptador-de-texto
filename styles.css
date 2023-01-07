@@ -1,0 +1,126 @@
+:root {
+  --dark-blue: #0a3871;
+  --gray-400: #495057;
+  --white: #ffffff;
+  --fondo: #e5e5e5;
+  --light-gray: #d8dfe8;
+  --gray-500: #343a40;
+}
+
+body {
+  background-color: var(--fondo);
+}
+/* header{
+    margin: 30px 10px 0 20px;
+    width: 10px;
+} */
+.logo {
+  margin: 20px 20px 0 50px;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* position: relative; */
+}
+
+.contenedor-izquierdo > textarea {
+  margin: 30px 20px 0 50px;
+  width: 577px;
+  height: 300px;
+  border: none;
+  background-color: var(--fondo);
+  color: var(--dark-blue);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+  outline: none;
+  resize: none;
+}
+
+textarea::placeholder {
+  color: var(--dark-blue);
+}
+
+.contenedor-izquierdo > p {
+  margin: 30px 20px 0 80px;
+  color: var(--gray-400);
+  width: 205px;
+  height: 18px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  opacity: 0.8;
+}
+
+.botones {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 30px 20px 0 80px;
+  gap: 24px;
+}
+#btnEncriptar {
+  color: var(--white);
+  width: 328px;
+  height: 67px;
+  background: var(--dark-blue);
+  border-radius: 24px;
+  border: none;
+}
+
+#btnDesencriptar {
+  color: var(--dark-blue);
+  width: 328px;
+  height: 67px;
+  background: var(--light-gray);
+  border-radius: 24px;
+  border: 1px solid var(--dark-blue);
+}
+.contenedor-derecho {
+  /* position: absolute;
+    top: 40px;
+    bottom: 40px;
+    left: 1000px; */
+  background-color: var(--white);
+  width: 400px;
+  height: 600px;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+  margin: -50px;
+}
+
+.imagen {
+  width: 336px;
+  height: 304px;
+  margin: 30px 30px 50px 30px;
+}
+.mensajeNoEncontrado {
+  width: 336px;
+  height: 58px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  color: var(--gray-500);
+  margin: 20px;
+  font-family: "Inter", sans-serif;
+}
+
+.mensajeError {
+  width: 336px;
+  height: 48px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #495057;
+  margin: 32px;
+  font-family: "Inter", sans-serif;
+}
