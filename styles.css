@@ -26,9 +26,9 @@ main {
 }
 
 .contenedor-izquierdo > textarea {
-  margin: 30px 20px 0 50px;
-  width: 577px;
-  height: 300px;
+  margin: 30px 20px 0 40px;
+  width: 700px;
+  height: 380px;
   border: none;
   background-color: var(--fondo);
   color: var(--dark-blue);
@@ -42,6 +42,21 @@ main {
 
 textarea::placeholder {
   color: var(--dark-blue);
+}
+
+textarea::-webkit-scrollbar {
+  background: none;
+  border: none;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background: var(--dark-blue);
+  border-radius: 20px;
+  width: 10px;
+}
+
+textarea::-webkit-scrollbar:vertical {
+  width: 10px;
 }
 
 .contenedor-izquierdo > p {
@@ -60,7 +75,7 @@ textarea::placeholder {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin: 30px 20px 0 80px;
+  margin: 30px 20px 0 40px;
   gap: 24px;
 }
 #btnEncriptar {
@@ -87,7 +102,7 @@ textarea::placeholder {
     left: 1000px; */
   background-color: var(--white);
   width: 400px;
-  height: 600px;
+  height: 660px;
   box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
   border-radius: 32px;
   margin: -50px;
@@ -97,6 +112,7 @@ textarea::placeholder {
   width: 336px;
   height: 304px;
   margin: 30px 30px 50px 30px;
+  /* display: none; */
 }
 .mensajeNoEncontrado {
   width: 336px;
@@ -123,4 +139,38 @@ textarea::placeholder {
   color: #495057;
   margin: 32px;
   font-family: "Inter", sans-serif;
+}
+
+/* tablet */
+
+@media screen and (max-width: 1160px) {
+  .logo {
+    margin: 20px 20px 0 20px;
+  }
+
+  .contenedor-izquierdo {
+    margin: 80px 35px 0 15px;
+  }
+  
+  .botones {
+    margin: 45px 20px 0 40px;
+  }
+
+  .contenedor-izquierdo > p {
+    margin: 190px 20px 0 40px;
+  }
+
+  .contenedor-derecho {
+    margin: 50px 20px 0 0;
+    width: 700px;
+    min-width: 0px;
+    height: 200px;
+  }
+
+  .mensajeNoEncontrado {
+    margin: -350px 0 0 190px;
+  }
+  .mensajeError {
+    margin: -6px 0 0 190px;
+  }
 }
